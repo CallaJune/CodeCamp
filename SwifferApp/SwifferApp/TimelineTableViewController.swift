@@ -65,7 +65,7 @@ class TimelineTableViewController: UITableViewController {
             
             loginAlert.addAction(UIAlertAction(title: "Login", style: UIAlertActionStyle.Default, handler: {
                     alertAction in
-                let textFields:NSArray = loginAlert.textFields as NSArray
+                let textFields:NSArray = loginAlert.textFields as AnyObject! as NSArray
                 let usernameTextfield:UITextField = textFields.objectAtIndex(0) as UITextField
                 let passwordTextfield:UITextField = textFields.objectAtIndex(1) as UITextField
                 
@@ -87,7 +87,7 @@ class TimelineTableViewController: UITableViewController {
             
             loginAlert.addAction(UIAlertAction(title: "Sign Up", style: UIAlertActionStyle.Default, handler: {
                 alertAction in
-                let textFields:NSArray = loginAlert.textFields as NSArray
+                let textFields:NSArray = loginAlert.textFields as AnyObject! as NSArray
                 let usernameTextfield:UITextField = textFields.objectAtIndex(0) as UITextField
                 let passwordTextfield:UITextField = textFields.objectAtIndex(1) as UITextField
                 
@@ -143,12 +143,14 @@ class TimelineTableViewController: UITableViewController {
         // Return the number of rows in the section.
         return timelineData.count
     }
+    
+    
+    
 
+   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell:SweetTableViewCell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as SweetTableViewCell
     
-   override func tableView(tableView: UITableView?, cellForRowAtIndexPath indexPath: NSIndexPath?) -> UITableViewCell? {
-        let cell:SweetTableViewCell = tableView!.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath!) as SweetTableViewCell
-    
-        let sweet:PFObject = self.timelineData.objectAtIndex(indexPath!.row) as PFObject
+        let sweet:PFObject = self.timelineData.objectAtIndex(indexPath.row) as PFObject
     
     cell.sweetTextView.alpha = 0
     cell.timestampLabel.alpha = 0

@@ -48,7 +48,7 @@ class ComposeViewController: UIViewController, UITextViewDelegate {
         
         sweet.saveInBackground()
         
-        self.navigationController.popToRootViewControllerAnimated(true)
+        self.navigationController?.popToRootViewControllerAnimated(true)
         
     }
 

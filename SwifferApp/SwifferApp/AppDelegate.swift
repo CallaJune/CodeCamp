@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         
         
-        Parse.setApplicationId("eUEC7O4Jad0Kt3orqRouU0OJhkGuE20n4uSfrLYE", clientKey: "WypmaQ8XyqH26AeWIANttqwUjRJR4CIM55ioXvez")
+        Parse.setApplicationId("NBeuo9wrYaMFFe0lL7YAVnBL1kz1kGofoSCoTArr", clientKey: "2HDce1BNM872fvk9OiFYmbdK1SJebtCuu56w7OlK")
         
         
         return true
