@@ -10,6 +10,7 @@ import UIKit
 
 class SweetTableViewCell: UITableViewCell {
 
+    @IBOutlet var postTypeLabel: UILabel! = UILabel()
     @IBOutlet var usernameLabel: UILabel! = UILabel()
     @IBOutlet var timestampLabel: UILabel! = UILabel()
     @IBOutlet var sweetTextView: UITextView! = UITextView()
