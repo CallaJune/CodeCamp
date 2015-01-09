@@ -8,10 +8,18 @@
 
 import UIKit
 
-class ComposeViewController: UIViewController, UITextViewDelegate {
+class ComposeViewController: UIViewController, UITextViewDelegate,UIPickerViewDataSource, UIPickerViewDelegate {
 
     @IBOutlet var sweetTextView: UITextView! = UITextView()
     @IBOutlet var charRemainingLabel: UILabel! = UILabel()
+
+    var selectedType = String()
+    
+    @IBOutlet var postTypePicker: PostTypePicker!
+    let pickerData = ["Health","Current Events","Milestone","Social","Letter"]
+   
+    @IBOutlet var pickerLabel: UILabel!
+    
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -22,8 +30,14 @@ class ComposeViewController: UIViewController, UITextViewDelegate {
         super.init(coder: aDecoder)
     }
 
+    
+    
     override func viewDidLoad() {
+   
         super.viewDidLoad()
+       // postTypePicker.dataSource = self
+        postTypePicker.delegate = self
+
 
         sweetTextView.layer.borderColor = UIColor.blackColor().CGColor
         sweetTextView.layer.borderWidth = 0.5
@@ -45,6 +59,7 @@ class ComposeViewController: UIViewController, UITextViewDelegate {
         var sweet:PFObject = PFObject(className: "Sweets")
         sweet["content"] = sweetTextView.text
         sweet["sweeter"] = PFUser.currentUser()
+        sweet["PostType"] = selectedType
         
         sweet.saveInBackground()
         
@@ -58,11 +73,32 @@ class ComposeViewController: UIViewController, UITextViewDelegate {
         replacementText text: String!) -> Bool{
     
             var newLength:Int = (textView.text as NSString).length + (text as NSString).length - range.length
-            var remainingChar:Int = 140 - newLength
+            var remainingChar:Int = 500 - newLength
             
             charRemainingLabel.text = "\(remainingChar)"
             
-            return (newLength > 140) ? false : true
+            return (newLength > 500) ? false : true
+    }
+    
+    
+    //MARK: - Delegates and data sources
+    //MARK: Data Sources
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    //MARK: Delegates
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+        return pickerData[row]
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        pickerLabel.text = pickerData[row]
+        selectedType=pickerData[row]
+       
+
     }
     
     /*

@@ -155,12 +155,15 @@ class TimelineTableViewController: UITableViewController {
     cell.sweetTextView.alpha = 0
     cell.timestampLabel.alpha = 0
     cell.usernameLabel.alpha = 0
+    cell.postTypeLabel.alpha = 0
     
         cell.sweetTextView.text = sweet.objectForKey("content") as String
+    
+    cell.postTypeLabel.text = sweet.objectForKey("PostType") as? String
 
     
         var dataFormatter:NSDateFormatter = NSDateFormatter()
-        dataFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+        dataFormatter.dateFormat = "MM-dd-yyyy"
         cell.timestampLabel.text = dataFormatter.stringFromDate(sweet.createdAt)
         
         var findSweeter:PFQuery = PFUser.query()
@@ -176,6 +179,7 @@ class TimelineTableViewController: UITableViewController {
                         cell.sweetTextView.alpha = 1
                         cell.timestampLabel.alpha = 1
                         cell.usernameLabel.alpha = 1
+                        cell.postTypeLabel.alpha = 1
                     })
             }
         }
