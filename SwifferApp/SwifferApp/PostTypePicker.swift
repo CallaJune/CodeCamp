@@ -9,9 +9,7 @@
 import UIKit
 
 class PostTypePicker: UIPickerView {
-    
-    
-      var types = ["Health","Current events","Letter","Milestones","Social"]
+    var types = ["Health","Current events","Letter","Milestones","Social"]
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
@@ -20,9 +18,5 @@ class PostTypePicker: UIPickerView {
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return types.count
     }
-    
-  
-
-
 
 }

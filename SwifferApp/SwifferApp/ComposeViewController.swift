@@ -19,8 +19,6 @@ class ComposeViewController: UIViewController, UITextViewDelegate,UIPickerViewDa
     let pickerData = ["Health","Current Events","Milestone","Social","Letter"]
    
     @IBOutlet var pickerLabel: UILabel!
-    
-    
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         // Custom initialization
@@ -29,9 +27,6 @@ class ComposeViewController: UIViewController, UITextViewDelegate,UIPickerViewDa
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-
-    
-    
     override func viewDidLoad() {
    
         super.viewDidLoad()
@@ -66,8 +61,6 @@ class ComposeViewController: UIViewController, UITextViewDelegate,UIPickerViewDa
         self.navigationController?.popToRootViewControllerAnimated(true)
         
     }
-
-    
     func textView(textView: UITextView!,
         shouldChangeTextInRange range: NSRange,
         replacementText text: String!) -> Bool{
@@ -79,7 +72,6 @@ class ComposeViewController: UIViewController, UITextViewDelegate,UIPickerViewDa
             
             return (newLength > 500) ? false : true
     }
-    
     
     //MARK: - Delegates and data sources
     //MARK: Data Sources
@@ -97,18 +89,7 @@ class ComposeViewController: UIViewController, UITextViewDelegate,UIPickerViewDa
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         pickerLabel.text = pickerData[row]
         selectedType=pickerData[row]
-       
 
     }
-    
-    /*
-    // #pragma mark - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue?, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
