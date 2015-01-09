@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		294BEF141A5F7D7D0024FB6B /* ChildSheetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294BEF131A5F7D7D0024FB6B /* ChildSheetTableViewController.swift */; };
 		86F71A4B19608640008EE3B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F71A4A19608640008EE3B7 /* AppDelegate.swift */; };
 		86F71A4D19608640008EE3B7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86F71A4C19608640008EE3B7 /* Images.xcassets */; };
 		86F71A5919608640008EE3B7 /* SwifferAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F71A5819608640008EE3B7 /* SwifferAppTests.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		294BEF131A5F7D7D0024FB6B /* ChildSheetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildSheetTableViewController.swift; sourceTree = "<group>"; };
 		86F71A4519608640008EE3B7 /* SwifferApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwifferApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86F71A4919608640008EE3B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86F71A4A19608640008EE3B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				86F71A8019608AAE008EE3B7 /* ComposeViewController.swift */,
 				86F71A8219608BB6008EE3B7 /* SweetTableViewCell.swift */,
 				86F71A7C1960885E008EE3B7 /* Storyboard.storyboard */,
+				294BEF131A5F7D7D0024FB6B /* ChildSheetTableViewController.swift */,
 				86F71A7919608718008EE3B7 /* SwifferApp-Bridging-Header.h */,
 				86F71A4C19608640008EE3B7 /* Images.xcassets */,
 				86F71A4819608640008EE3B7 /* Supporting Files */,
@@ -268,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86F71A8119608AAE008EE3B7 /* ComposeViewController.swift in Sources */,
+				294BEF141A5F7D7D0024FB6B /* ChildSheetTableViewController.swift in Sources */,
 				86F71A7F19608A73008EE3B7 /* TimelineTableViewController.swift in Sources */,
 				86F71A8319608BB6008EE3B7 /* SweetTableViewCell.swift in Sources */,
 				86F71A4B19608640008EE3B7 /* AppDelegate.swift in Sources */,
@@ -460,6 +464,7 @@
 				86F71A5E19608640008EE3B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		86F71A5F19608640008EE3B7 /* Build configuration list for PBXNativeTarget "SwifferAppTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +473,7 @@
 				86F71A6119608640008EE3B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
