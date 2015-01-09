@@ -99,9 +99,14 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="health.png" id="MLq-WP-QkZ">
+                                            <rect key="frame" x="264" y="80" width="48" height="39"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="imageView" destination="MLq-WP-QkZ" id="fRY-gj-JOx"/>
                                     <outlet property="postTypeLabel" destination="e10-sT-GZ5" id="EBq-34-vaW"/>
                                     <outlet property="sweetTextView" destination="C7U-dd-w0g" id="Owh-Ca-Cz2"/>
                                     <outlet property="timestampLabel" destination="FAg-Hl-m5E" id="U6G-nl-b7s"/>
@@ -150,6 +155,9 @@
             <point key="canvasLocation" x="311" y="360"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="health.png" width="128" height="122"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

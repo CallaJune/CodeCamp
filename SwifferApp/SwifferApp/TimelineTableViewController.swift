@@ -11,6 +11,9 @@ class TimelineTableViewController: UITableViewController {
 
     var timelineData:NSMutableArray! = NSMutableArray()
     
+   
+ 
+    
     override init(style: UITableViewStyle) {
         super.init(style: style)
         // Custom initialization
@@ -90,6 +93,7 @@ class TimelineTableViewController: UITableViewController {
             self.presentViewController(loginAlert, animated: true, completion: nil)
         }
     }
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -117,18 +121,34 @@ class TimelineTableViewController: UITableViewController {
     
         if(cell.postTypeLabel.text == "Health"){
             cell.postTypeLabel.textColor = UIColor.redColor()
+             cell.thisImageView.frame=CGRectMake(20, 20, 32, 32)
+            var health : UIImage! = UIImage(named: "health.png")
+            cell.thisImageView.image = health
         }
         if(cell.postTypeLabel.text == "Current Events"){
             cell.postTypeLabel.textColor = UIColor.blackColor()
+             cell.thisImageView.frame=CGRectMake(20, 20, 32, 32)
+            var news : UIImage! = UIImage(named: "news.png")
+            cell.thisImageView.image = news
         }
         if(cell.postTypeLabel.text == "Milestone"){
             cell.postTypeLabel.textColor = UIColor.greenColor()
+             cell.thisImageView.frame=CGRectMake(20, 20, 32, 32)
+            var milestones : UIImage! = UIImage(named: "milestones.png")
+            cell.thisImageView.image = milestones
         }
         if(cell.postTypeLabel.text == "Social"){
             cell.postTypeLabel.textColor = UIColor.blueColor()
+             cell.thisImageView.frame=CGRectMake(20, 20, 32, 32)
+            var social : UIImage! = UIImage(named: "social.png")
+            cell.thisImageView.image = social
         }
         if(cell.postTypeLabel.text == "Letter"){
             cell.postTypeLabel.textColor = UIColor.orangeColor()
+            cell.imageView?.frame=CGRectMake(20, 20, 32, 32)
+            var letter : UIImage! = UIImage(named: "letter.png")
+            cell.imageView?.image = letter
+     
         }
         cell.sweetTextView.alpha = 0
         cell.timestampLabel.alpha = 0
