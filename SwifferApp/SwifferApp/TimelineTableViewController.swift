@@ -5,7 +5,6 @@
 //  Created by Training on 29/06/14.
 //  Copyright (c) 2014 Training. All rights reserved.
 //
-
 import UIKit
 
 class TimelineTableViewController: UITableViewController {
@@ -41,7 +40,6 @@ class TimelineTableViewController: UITableViewController {
     }
     override func viewDidAppear(animated: Bool) {
         self.loadData()
-        
         if PFUser.currentUser() == nil{
             var loginAlert:UIAlertController = UIAlertController(title: "Sign Up / Login", message: "Please sign up or login", preferredStyle: UIAlertControllerStyle.Alert)
             
@@ -92,22 +90,16 @@ class TimelineTableViewController: UITableViewController {
             self.presentViewController(loginAlert, animated: true, completion: nil)
         }
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    // #pragma mark - Table view data source
-
     override func numberOfSectionsInTableView(tableView: UITableView?) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
@@ -123,15 +115,27 @@ class TimelineTableViewController: UITableViewController {
     
         let sweet:PFObject = self.timelineData.objectAtIndex(indexPath.row) as PFObject
     
-    cell.sweetTextView.alpha = 0
-    cell.timestampLabel.alpha = 0
-    cell.usernameLabel.alpha = 0
-    cell.postTypeLabel.alpha = 0
-    
-    cell.sweetTextView.text = sweet.objectForKey("content") as String
-    
-    cell.postTypeLabel.text = sweet.objectForKey("PostType") as? String
-
+        if(cell.postTypeLabel.text == "Health"){
+            cell.postTypeLabel.textColor = UIColor.redColor()
+        }
+        if(cell.postTypeLabel.text == "Current Events"){
+            cell.postTypeLabel.textColor = UIColor.blackColor()
+        }
+        if(cell.postTypeLabel.text == "Milestone"){
+            cell.postTypeLabel.textColor = UIColor.greenColor()
+        }
+        if(cell.postTypeLabel.text == "Social"){
+            cell.postTypeLabel.textColor = UIColor.blueColor()
+        }
+        if(cell.postTypeLabel.text == "Letter"){
+            cell.postTypeLabel.textColor = UIColor.orangeColor()
+        }
+        cell.sweetTextView.alpha = 0
+        cell.timestampLabel.alpha = 0
+        cell.usernameLabel.alpha = 0
+        cell.postTypeLabel.alpha = 0
+        cell.sweetTextView.text = sweet.objectForKey("content") as String
+        cell.postTypeLabel.text = sweet.objectForKey("PostType") as? String
     
         var dataFormatter:NSDateFormatter = NSDateFormatter()
         dataFormatter.dateFormat = "MM-dd-yyyy"
@@ -156,5 +160,4 @@ class TimelineTableViewController: UITableViewController {
         }
         return cell
     }
-
 }
