@@ -19,6 +19,7 @@ class TimelineTableViewController: UITableViewController {
     
     override init(style: UITableViewStyle) {
         super.init(style: style)
+  
         // Custom initialization
     }
     required init(coder aDecoder: NSCoder) {
@@ -127,27 +128,24 @@ class TimelineTableViewController: UITableViewController {
     }
    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     
-
-    
         let cell:SweetTableViewCell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as SweetTableViewCell
 
-   
 
-    
         let sweet:PFObject = self.timelineData.objectAtIndex(indexPath.row) as PFObject
+    
             cell.sweetTextView.alpha = 0
-        cell.timestampLabel.alpha = 0
-        cell.usernameLabel.alpha = 0
-        cell.postTypeLabel.alpha = 0
-        cell.sweetTextView.text = sweet.objectForKey("content") as String
-        cell.postTypeLabel.text = sweet.objectForKey("PostType") as? String
+            cell.timestampLabel.alpha = 0
+            cell.usernameLabel.alpha = 0
+            cell.postTypeLabel.alpha = 0
+            cell.sweetTextView.text = sweet.objectForKey("content") as String
+            cell.postTypeLabel.text = sweet.objectForKey("PostType") as? String
     
         var dataFormatter:NSDateFormatter = NSDateFormatter()
-        dataFormatter.dateFormat = "MM-dd-yyyy"
-        cell.timestampLabel.text = dataFormatter.stringFromDate(sweet.createdAt)
+            dataFormatter.dateFormat = "MM-dd-yyyy"
+            cell.timestampLabel.text = dataFormatter.stringFromDate(sweet.createdAt)
         
         var findSweeter:PFQuery = PFUser.query()
-        findSweeter.whereKey("objectId", equalTo: sweet.objectForKey("sweeter").objectId)
+            findSweeter.whereKey("objectId", equalTo: sweet.objectForKey("sweeter").objectId)
         
         findSweeter.findObjectsInBackgroundWithBlock{
             (objects:[AnyObject]!, error:NSError!)->Void in
@@ -165,27 +163,19 @@ class TimelineTableViewController: UITableViewController {
         }
     
     if(cell.postTypeLabel.text == "Health"){
-        
         cell.thisImageView.image = health
     }
     if(cell.postTypeLabel.text == "Current Events"){
-        
-        
         cell.thisImageView.image = news
     }
     if(cell.postTypeLabel.text == "Milestone"){
-        
         cell.thisImageView.image = milestones
     }
     if(cell.postTypeLabel.text == "Social"){
-       
-        
         cell.thisImageView.image = social
     }
     if(cell.postTypeLabel.text == "Letter"){
-        
         cell.thisImageView.image = letter
-        
     }
     
         return cell

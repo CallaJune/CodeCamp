@@ -17,15 +17,13 @@ class ChildSheetTableViewController: UITableViewController {
         
         childPicture.clipsToBounds=true
         
-        // Create a white border with defined width
-      ////  let myBlackColor = CGColorCreateCopy(color: blackColor!)
-       // childPicture.layer.borderColor = myBlackColor
-        childPicture.layer.borderWidth = 1.5
+        //var myColor : UIColor = UIColor( red: 0.5, green: 0.5, blue:0, alpha: 1.0 )
+        //childPicture.layer.borderColor = myColor.CGColor
+        childPicture.layer.borderWidth = 4
         
         // Set image corner radius
-        childPicture.layer.cornerRadius = 5.0
-        
-        // Custom initialization
+        childPicture.layer.cornerRadius = 2.0
+
     }
     
     required init(coder aDecoder: NSCoder) {
