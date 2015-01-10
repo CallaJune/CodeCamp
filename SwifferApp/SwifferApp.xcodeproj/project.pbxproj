@@ -32,6 +32,10 @@
 		AB307FEB1A5F9F16008D013A /* social.png in Resources */ = {isa = PBXBuildFile; fileRef = AB307FEA1A5F9F16008D013A /* social.png */; };
 		AB307FED1A5F9F1D008D013A /* news.png in Resources */ = {isa = PBXBuildFile; fileRef = AB307FEC1A5F9F1D008D013A /* news.png */; };
 		ACC979B11A5F7E5F00F4A424 /* PostTypePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC979B01A5F7E5F00F4A424 /* PostTypePicker.swift */; };
+<<<<<<< HEAD
+		ACC979B71A60F6CF00F4A424 /* child.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACC979B61A60F6CF00F4A424 /* child.jpg */; };
+=======
+>>>>>>> 13d7bf4d5a193647d3b8c5e0bbdc2c95b2ddae34
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +79,10 @@
 		AB307FEA1A5F9F16008D013A /* social.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = social.png; sourceTree = "<group>"; };
 		AB307FEC1A5F9F1D008D013A /* news.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = news.png; sourceTree = "<group>"; };
 		ACC979B01A5F7E5F00F4A424 /* PostTypePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTypePicker.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
+		ACC979B61A60F6CF00F4A424 /* child.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = child.jpg; path = ../child.jpg; sourceTree = "<group>"; };
+=======
+>>>>>>> 13d7bf4d5a193647d3b8c5e0bbdc2c95b2ddae34
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +136,10 @@
 		86F71A4719608640008EE3B7 /* SwifferApp */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
+				ACC979B61A60F6CF00F4A424 /* child.jpg */,
+=======
+>>>>>>> 13d7bf4d5a193647d3b8c5e0bbdc2c95b2ddae34
 				AB307FE41A5F9F05008D013A /* letter.png */,
 				AB307FE81A5F9F0E008D013A /* health.png */,
 				AB307FEA1A5F9F16008D013A /* social.png */,
@@ -239,6 +251,10 @@
 				TargetAttributes = {
 					86F71A4419608640008EE3B7 = {
 						CreatedOnToolsVersion = 6.0;
+<<<<<<< HEAD
+						DevelopmentTeam = WM89QG2982;
+=======
+>>>>>>> 13d7bf4d5a193647d3b8c5e0bbdc2c95b2ddae34
 					};
 					86F71A5119608640008EE3B7 = {
 						CreatedOnToolsVersion = 6.0;
@@ -273,6 +289,10 @@
 				86F71A4D19608640008EE3B7 /* Images.xcassets in Resources */,
 				AB307FEB1A5F9F16008D013A /* social.png in Resources */,
 				AB307FE51A5F9F05008D013A /* letter.png in Resources */,
+<<<<<<< HEAD
+				ACC979B71A60F6CF00F4A424 /* child.jpg in Resources */,
+=======
+>>>>>>> 13d7bf4d5a193647d3b8c5e0bbdc2c95b2ddae34
 				AB307FED1A5F9F1D008D013A /* news.png in Resources */,
 				AB307FE91A5F9F0E008D013A /* health.png in Resources */,
 				86F71A7D1960885E008EE3B7 /* Storyboard.storyboard in Resources */,
@@ -404,6 +424,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+<<<<<<< HEAD
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+=======
+>>>>>>> 13d7bf4d5a193647d3b8c5e0bbdc2c95b2ddae34
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -411,6 +436,10 @@
 				INFOPLIST_FILE = SwifferApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+<<<<<<< HEAD
+				PROVISIONING_PROFILE = "";
+=======
+>>>>>>> 13d7bf4d5a193647d3b8c5e0bbdc2c95b2ddae34
 				SWIFT_OBJC_BRIDGING_HEADER = "SwifferApp/SwifferApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -422,6 +451,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+<<<<<<< HEAD
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+=======
+>>>>>>> 13d7bf4d5a193647d3b8c5e0bbdc2c95b2ddae34
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -429,6 +463,10 @@
 				INFOPLIST_FILE = SwifferApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+<<<<<<< HEAD
+				PROVISIONING_PROFILE = "";
+=======
+>>>>>>> 13d7bf4d5a193647d3b8c5e0bbdc2c95b2ddae34
 				SWIFT_OBJC_BRIDGING_HEADER = "SwifferApp/SwifferApp-Bridging-Header.h";
 			};
 			name = Release;
