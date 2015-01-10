@@ -12,15 +12,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-<<<<<<< HEAD
-=======
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="gih-Lz-hpD">
-                                <rect key="frame" x="40" y="94" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
->>>>>>> 13d7bf4d5a193647d3b8c5e0bbdc2c95b2ddae34
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="140" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IQT-yh-pdd">
                                 <rect key="frame" x="251" y="230" width="29" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -32,7 +23,6 @@
                                 <rect key="frame" x="0.0" y="320" width="320" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
-<<<<<<< HEAD
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Health" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" id="fOn-x6-ZFJ">
                                 <rect key="frame" x="126" y="315" width="63" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -47,15 +37,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-=======
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" id="fOn-x6-ZFJ">
-                                <rect key="frame" x="139" y="315" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
->>>>>>> 13d7bf4d5a193647d3b8c5e0bbdc2c95b2ddae34
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -70,11 +51,7 @@
                         <outlet property="charRemainingLabel" destination="IQT-yh-pdd" id="B8W-wd-bEk"/>
                         <outlet property="pickerLabel" destination="fOn-x6-ZFJ" id="dm8-gO-OLX"/>
                         <outlet property="postTypePicker" destination="RZK-Dd-88V" id="BKm-V7-D8q"/>
-<<<<<<< HEAD
                         <outlet property="sweetTextView" destination="yzI-3a-39D" id="H95-PZ-ZZG"/>
-=======
-                        <outlet property="sweetTextView" destination="gih-Lz-hpD" id="Z08-uO-QWu"/>
->>>>>>> 13d7bf4d5a193647d3b8c5e0bbdc2c95b2ddae34
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kWz-ca-YZg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -85,30 +62,18 @@
         <scene sceneID="Ynj-pK-D0j">
             <objects>
                 <tableViewController id="Nuc-yj-acU" customClass="TimelineTableViewController" customModule="SwifferApp" customModuleProvider="target" sceneMemberID="viewController">
-<<<<<<< HEAD
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="145" sectionHeaderHeight="22" sectionFooterHeight="22" id="SfZ-00-nrz">
-=======
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="128" sectionHeaderHeight="22" sectionFooterHeight="22" id="SfZ-00-nrz">
->>>>>>> 13d7bf4d5a193647d3b8c5e0bbdc2c95b2ddae34
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-<<<<<<< HEAD
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="145" id="w9H-VW-y1S" customClass="SweetTableViewCell" customModule="SwifferApp" customModuleProvider="target">
-=======
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="128" id="w9H-VW-y1S" customClass="SweetTableViewCell" customModule="SwifferApp" customModuleProvider="target">
->>>>>>> 13d7bf4d5a193647d3b8c5e0bbdc2c95b2ddae34
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w9H-VW-y1S" id="4Tl-EA-5Qb">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="g0f-fH-EB5">
-<<<<<<< HEAD
                                             <rect key="frame" x="20" y="10" width="196" height="21"/>
-=======
-                                            <rect key="frame" x="20" y="10" width="118" height="21"/>
->>>>>>> 13d7bf4d5a193647d3b8c5e0bbdc2c95b2ddae34
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -128,41 +93,23 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-<<<<<<< HEAD
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news.png" id="owG-1d-kpS">
                                             <rect key="frame" x="287" y="111" width="25" height="25"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post Type" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e10-sT-GZ5">
                                             <rect key="frame" x="44" y="114" width="235" height="21"/>
-=======
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e10-sT-GZ5">
-                                            <rect key="frame" x="131" y="98" width="76" height="21"/>
->>>>>>> 13d7bf4d5a193647d3b8c5e0bbdc2c95b2ddae34
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-<<<<<<< HEAD
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="postTypeLabel" destination="e10-sT-GZ5" id="EBq-34-vaW"/>
                                     <outlet property="sweetTextView" destination="C7U-dd-w0g" id="Owh-Ca-Cz2"/>
                                     <outlet property="thisImageView" destination="owG-1d-kpS" id="f61-yM-l6i"/>
-=======
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="health.png" id="MLq-WP-QkZ">
-                                            <rect key="frame" x="264" y="80" width="48" height="39"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
-                                    </subviews>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="imageView" destination="MLq-WP-QkZ" id="fRY-gj-JOx"/>
-                                    <outlet property="postTypeLabel" destination="e10-sT-GZ5" id="EBq-34-vaW"/>
-                                    <outlet property="sweetTextView" destination="C7U-dd-w0g" id="Owh-Ca-Cz2"/>
->>>>>>> 13d7bf4d5a193647d3b8c5e0bbdc2c95b2ddae34
                                     <outlet property="timestampLabel" destination="FAg-Hl-m5E" id="U6G-nl-b7s"/>
                                     <outlet property="usernameLabel" destination="g0f-fH-EB5" id="z7m-wj-bmS"/>
                                 </connections>
@@ -223,7 +170,6 @@
         <scene sceneID="f6r-G4-3FF">
             <objects>
                 <tableViewController id="itv-sE-8UF" customClass="ChildSheetTableViewController" customModule="SwifferApp" customModuleProvider="target" sceneMemberID="viewController">
-<<<<<<< HEAD
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ywd-PR-NL2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -295,20 +241,6 @@
                                 </cells>
                             </tableViewSection>
                         </sections>
-=======
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ywd-PR-NL2">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="xzp-gT-zdb">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xzp-gT-zdb" id="PSW-Bx-JH5">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
->>>>>>> 13d7bf4d5a193647d3b8c5e0bbdc2c95b2ddae34
                         <connections>
                             <outlet property="dataSource" destination="itv-sE-8UF" id="gEF-gt-FTq"/>
                             <outlet property="delegate" destination="itv-sE-8UF" id="EbE-vd-J5G"/>
@@ -344,12 +276,8 @@
         </scene>
     </scenes>
     <resources>
-<<<<<<< HEAD
         <image name="child.jpg" width="200" height="267"/>
         <image name="news.png" width="128" height="128"/>
-=======
-        <image name="health.png" width="128" height="122"/>
->>>>>>> 13d7bf4d5a193647d3b8c5e0bbdc2c95b2ddae34
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

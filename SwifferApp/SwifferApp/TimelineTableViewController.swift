@@ -10,16 +10,11 @@ import UIKit
 class TimelineTableViewController: UITableViewController {
 
     var timelineData:NSMutableArray! = NSMutableArray()
-<<<<<<< HEAD
     var health : UIImage! = UIImage(named: "health.png")
     var news : UIImage! = UIImage(named: "news.png")
     var milestones : UIImage! = UIImage(named: "milestones.png")
     var social : UIImage! = UIImage(named: "social.png")
     var letter : UIImage! = UIImage(named: "letter.png")
-=======
-    
-   
->>>>>>> 13d7bf4d5a193647d3b8c5e0bbdc2c95b2ddae34
  
     
     override init(style: UITableViewStyle) {
@@ -51,10 +46,7 @@ class TimelineTableViewController: UITableViewController {
     }
     override func viewDidAppear(animated: Bool) {
         self.loadData()
-<<<<<<< HEAD
          self.tableView.reloadData()
-=======
->>>>>>> 13d7bf4d5a193647d3b8c5e0bbdc2c95b2ddae34
         if PFUser.currentUser() == nil{
             var loginAlert:UIAlertController = UIAlertController(title: "Sign Up / Login", message: "Please sign up or login", preferredStyle: UIAlertControllerStyle.Alert)
             
@@ -102,14 +94,11 @@ class TimelineTableViewController: UITableViewController {
                     }
                 }
             }))
-<<<<<<< HEAD
             
             
             
             
             
-=======
->>>>>>> 13d7bf4d5a193647d3b8c5e0bbdc2c95b2ddae34
             self.presentViewController(loginAlert, animated: true, completion: nil)
         }
     }
@@ -117,11 +106,8 @@ class TimelineTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-<<<<<<< HEAD
         
         tableView(tableView,numberOfRowsInSection: 1)
-=======
->>>>>>> 13d7bf4d5a193647d3b8c5e0bbdc2c95b2ddae34
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
     }
@@ -140,7 +126,6 @@ class TimelineTableViewController: UITableViewController {
         return timelineData.count
     }
    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-<<<<<<< HEAD
     
 
     
@@ -151,44 +136,6 @@ class TimelineTableViewController: UITableViewController {
     
         let sweet:PFObject = self.timelineData.objectAtIndex(indexPath.row) as PFObject
             cell.sweetTextView.alpha = 0
-=======
-        let cell:SweetTableViewCell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as SweetTableViewCell
-    
-        let sweet:PFObject = self.timelineData.objectAtIndex(indexPath.row) as PFObject
-    
-        if(cell.postTypeLabel.text == "Health"){
-            cell.postTypeLabel.textColor = UIColor.redColor()
-             cell.thisImageView.frame=CGRectMake(20, 20, 32, 32)
-            var health : UIImage! = UIImage(named: "health.png")
-            cell.thisImageView.image = health
-        }
-        if(cell.postTypeLabel.text == "Current Events"){
-            cell.postTypeLabel.textColor = UIColor.blackColor()
-             cell.thisImageView.frame=CGRectMake(20, 20, 32, 32)
-            var news : UIImage! = UIImage(named: "news.png")
-            cell.thisImageView.image = news
-        }
-        if(cell.postTypeLabel.text == "Milestone"){
-            cell.postTypeLabel.textColor = UIColor.greenColor()
-             cell.thisImageView.frame=CGRectMake(20, 20, 32, 32)
-            var milestones : UIImage! = UIImage(named: "milestones.png")
-            cell.thisImageView.image = milestones
-        }
-        if(cell.postTypeLabel.text == "Social"){
-            cell.postTypeLabel.textColor = UIColor.blueColor()
-             cell.thisImageView.frame=CGRectMake(20, 20, 32, 32)
-            var social : UIImage! = UIImage(named: "social.png")
-            cell.thisImageView.image = social
-        }
-        if(cell.postTypeLabel.text == "Letter"){
-            cell.postTypeLabel.textColor = UIColor.orangeColor()
-            cell.imageView?.frame=CGRectMake(20, 20, 32, 32)
-            var letter : UIImage! = UIImage(named: "letter.png")
-            cell.imageView?.image = letter
-     
-        }
-        cell.sweetTextView.alpha = 0
->>>>>>> 13d7bf4d5a193647d3b8c5e0bbdc2c95b2ddae34
         cell.timestampLabel.alpha = 0
         cell.usernameLabel.alpha = 0
         cell.postTypeLabel.alpha = 0
@@ -216,7 +163,6 @@ class TimelineTableViewController: UITableViewController {
                 })
             }
         }
-<<<<<<< HEAD
     
     if(cell.postTypeLabel.text == "Health"){
         
@@ -242,8 +188,6 @@ class TimelineTableViewController: UITableViewController {
         
     }
     
-=======
->>>>>>> 13d7bf4d5a193647d3b8c5e0bbdc2c95b2ddae34
         return cell
     }
 }

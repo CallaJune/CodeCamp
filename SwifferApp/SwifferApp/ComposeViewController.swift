@@ -32,12 +32,8 @@ class ComposeViewController: UIViewController, UITextViewDelegate,UIPickerViewDa
         super.viewDidLoad()
        // postTypePicker.dataSource = self
         postTypePicker.delegate = self
-<<<<<<< HEAD
         
       
-=======
-
->>>>>>> 13d7bf4d5a193647d3b8c5e0bbdc2c95b2ddae34
 
         sweetTextView.layer.borderColor = UIColor.blackColor().CGColor
         sweetTextView.layer.borderWidth = 0.5
@@ -65,7 +61,6 @@ class ComposeViewController: UIViewController, UITextViewDelegate,UIPickerViewDa
         
         self.navigationController?.popToRootViewControllerAnimated(true)
         
-<<<<<<< HEAD
         
     }
     
@@ -81,12 +76,6 @@ class ComposeViewController: UIViewController, UITextViewDelegate,UIPickerViewDa
         replacementText text: String!) -> Bool{
             
             
-=======
-    }
-    func textView(textView: UITextView!,
-        shouldChangeTextInRange range: NSRange,
-        replacementText text: String!) -> Bool{
->>>>>>> 13d7bf4d5a193647d3b8c5e0bbdc2c95b2ddae34
     
             var newLength:Int = (textView.text as NSString).length + (text as NSString).length - range.length
             var remainingChar:Int = 500 - newLength
