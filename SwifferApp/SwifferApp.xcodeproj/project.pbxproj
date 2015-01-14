@@ -113,6 +113,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2915FF061A663B6F00F0874F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				AC1D589E1A6196CC007B9670 /* CI.gif */,
+				AC1D589A1A611CBA007B9670 /* more3.png */,
+				AC1D589B1A611CBA007B9670 /* more6.png */,
+				ACC979B61A60F6CF00F4A424 /* child.jpg */,
+				AB307FE41A5F9F05008D013A /* letter.png */,
+				AB307FE81A5F9F0E008D013A /* health.png */,
+				AB307FEA1A5F9F16008D013A /* social.png */,
+				AB307FEC1A5F9F1D008D013A /* news.png */,
+				AB307FE61A5F9F0A008D013A /* milestones.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		86F71A3C19608640008EE3B7 = {
 			isa = PBXGroup;
 			children = (
@@ -135,15 +151,7 @@
 		86F71A4719608640008EE3B7 /* SwifferApp */ = {
 			isa = PBXGroup;
 			children = (
-				AC1D589E1A6196CC007B9670 /* CI.gif */,
-				AC1D589A1A611CBA007B9670 /* more3.png */,
-				AC1D589B1A611CBA007B9670 /* more6.png */,
-				ACC979B61A60F6CF00F4A424 /* child.jpg */,
-				AB307FE41A5F9F05008D013A /* letter.png */,
-				AB307FE81A5F9F0E008D013A /* health.png */,
-				AB307FEA1A5F9F16008D013A /* social.png */,
-				AB307FEC1A5F9F1D008D013A /* news.png */,
-				AB307FE61A5F9F0A008D013A /* milestones.png */,
+				2915FF061A663B6F00F0874F /* images */,
 				86F71A4A19608640008EE3B7 /* AppDelegate.swift */,
 				86F71A7E19608A73008EE3B7 /* TimelineTableViewController.swift */,
 				86F71A8019608AAE008EE3B7 /* ComposeViewController.swift */,
