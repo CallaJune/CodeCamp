@@ -135,9 +135,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="0Wx-ao-byx">
-                        <barButtonItem key="leftBarButtonItem" title="Child" id="3jP-NE-0eT">
+                        <barButtonItem key="leftBarButtonItem" image="child-circular-avatar" id="rs0-Th-KFS">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="dzg-qd-cal" kind="modal" id="kDc-GG-ik7"/>
+                                <segue destination="dzg-qd-cal" kind="modal" id="Sjm-gD-52E"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="WXk-Kr-zzn">
@@ -157,6 +158,9 @@
                             </fragment>
                         </attributedString>
                     </refreshControl>
+                    <connections>
+                        <outlet property="ChildButton" destination="rs0-Th-KFS" id="qL4-yM-uo9"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8vp-8G-8nd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -311,6 +315,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="child-circular-avatar" width="30" height="30"/>
         <image name="child.jpg" width="200" height="267"/>
         <image name="more3.png" width="64" height="64"/>
         <image name="news.png" width="128" height="128"/>

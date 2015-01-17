@@ -16,6 +16,7 @@ class TimelineTableViewController: UITableViewController {
     var social : UIImage! = UIImage(named: "social.png")
     var letter : UIImage! = UIImage(named: "letter.png")
  
+    @IBOutlet weak var childButton: UIBarButtonItem!
     
     override init(style: UITableViewStyle) {
         super.init(style: style)
@@ -44,6 +45,8 @@ class TimelineTableViewController: UITableViewController {
                 self.tableView.reloadData()
             }
         }
+        
+        
     }
     override func viewDidAppear(animated: Bool) {
         self.loadData()
@@ -106,6 +109,8 @@ class TimelineTableViewController: UITableViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        childButton.image = childButton.image?.imageWithRenderingMode(.AlwaysOriginal)
         
         
         tableView(tableView,numberOfRowsInSection: 1)

@@ -17,8 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
         
         
-        UINavigationBar.appearance().barTintColor = UIColor(red: 135/255.0, green: 206/255.0, blue: 235/255.0, alpha: 1.0) //10
-        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        // UINavigationBar.appearance().barTintColor = UIColor(red: 135/255.0, green: 206/255.0, blue: 235/255.0, alpha: 1.0) //10
+//        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         
         
         Parse.setApplicationId("NBeuo9wrYaMFFe0lL7YAVnBL1kz1kGofoSCoTArr", clientKey: "2HDce1BNM872fvk9OiFYmbdK1SJebtCuu56w7OlK")
