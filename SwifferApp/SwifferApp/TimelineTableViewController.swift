@@ -36,7 +36,7 @@ class TimelineTableViewController: UITableViewController {
             
             if error == nil{
                 for object in objects{
-                    let sweet:PFObject = object as PFObject
+                    let sweet:PFObject = object as! PFObject
                     self.timelineData.addObject(sweet)
                 }
                 
@@ -65,9 +65,9 @@ class TimelineTableViewController: UITableViewController {
             })
             loginAlert.addAction(UIAlertAction(title: "Login", style: UIAlertActionStyle.Default, handler: {
                     alertAction in
-                let textFields:NSArray = loginAlert.textFields as AnyObject! as NSArray
-                let usernameTextfield:UITextField = textFields.objectAtIndex(0) as UITextField
-                let passwordTextfield:UITextField = textFields.objectAtIndex(1) as UITextField
+                let textFields:NSArray = loginAlert.textFields as AnyObject! as! NSArray
+                let usernameTextfield:UITextField = textFields.objectAtIndex(0) as! UITextField
+                let passwordTextfield:UITextField = textFields.objectAtIndex(1) as! UITextField
                 
                 PFUser.logInWithUsernameInBackground(usernameTextfield.text, password: passwordTextfield.text){
                     (user:PFUser!, error:NSError!)->Void in
@@ -80,16 +80,15 @@ class TimelineTableViewController: UITableViewController {
             }))
             loginAlert.addAction(UIAlertAction(title: "Sign Up", style: UIAlertActionStyle.Default, handler: {
                 alertAction in
-                let textFields:NSArray = loginAlert.textFields as AnyObject! as NSArray
-                let usernameTextfield:UITextField = textFields.objectAtIndex(0) as UITextField
-                let passwordTextfield:UITextField = textFields.objectAtIndex(1) as UITextField
+                let textFields:NSArray = loginAlert.textFields as AnyObject! as! NSArray
+                let usernameTextfield:UITextField = textFields.objectAtIndex(0) as! UITextField
+                let passwordTextfield:UITextField = textFields.objectAtIndex(1) as! UITextField
                 
                 var sweeter:PFUser = PFUser()
                 sweeter.username = usernameTextfield.text
                 sweeter.password = passwordTextfield.text
                 
-                sweeter.signUpInBackgroundWithBlock{
-                    (success:Bool!, error:NSError!)->Void in
+                sweeter.signUpInBackgroundWithBlock { (success:Bool, error:NSError!) in
                     if error == nil{
                         println("Sign Up successful")
                     }else{
@@ -133,16 +132,16 @@ class TimelineTableViewController: UITableViewController {
     }
    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     
-        let cell:SweetTableViewCell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as SweetTableViewCell
+        let cell:SweetTableViewCell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! SweetTableViewCell
 
 
-        let sweet:PFObject = self.timelineData.objectAtIndex(indexPath.row) as PFObject
+        let sweet:PFObject = self.timelineData.objectAtIndex(indexPath.row) as! PFObject
     
             cell.sweetTextView.alpha = 0
             cell.timestampLabel.alpha = 0
             cell.usernameLabel.alpha = 0
             cell.postTypeLabel.alpha = 0
-            cell.sweetTextView.text = sweet.objectForKey("content") as String
+            cell.sweetTextView.text = sweet.objectForKey("content") as! String
             cell.postTypeLabel.text = sweet.objectForKey("PostType") as? String
     
         var dataFormatter:NSDateFormatter = NSDateFormatter()
@@ -155,7 +154,7 @@ class TimelineTableViewController: UITableViewController {
         findSweeter.findObjectsInBackgroundWithBlock{
             (objects:[AnyObject]!, error:NSError!)->Void in
             if error == nil{
-                let user:PFUser = (objects as NSArray).lastObject as PFUser
+                let user:PFUser = (objects as NSArray).lastObject as! PFUser
                 cell.usernameLabel.text = user.username
                 
                 UIView.animateWithDuration(0.5, animations: {

@@ -71,9 +71,9 @@ class ComposeViewController: UIViewController, UITextViewDelegate,UIPickerViewDa
    
     }
     
-    func textView(textView: UITextView!,
+    func textView(textView: UITextView,
         shouldChangeTextInRange range: NSRange,
-        replacementText text: String!) -> Bool{
+        replacementText text: String) -> Bool{
             
             
     
