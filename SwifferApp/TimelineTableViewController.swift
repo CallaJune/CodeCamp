@@ -23,13 +23,13 @@ class TimelineTableViewController: UITableViewController {
   
         // Custom initialization
     }
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     @IBAction func loadData(){
         timelineData.removeAllObjects()
         
-        var findTimelineData:PFQuery = PFQuery(className: "Sweets")
+        let findTimelineData:PFQuery = PFQuery(className: "Sweets")
         
         findTimelineData.findObjectsInBackgroundWithBlock{
             (objects:[AnyObject]!, error:NSError!)->Void in
@@ -52,7 +52,7 @@ class TimelineTableViewController: UITableViewController {
         self.loadData()
          self.tableView.reloadData()
         if PFUser.currentUser() == nil{
-            var loginAlert:UIAlertController = UIAlertController(title: "Sign Up / Login", message: "Please sign up or login", preferredStyle: UIAlertControllerStyle.Alert)
+            let loginAlert:UIAlertController = UIAlertController(title: "Sign Up / Login", message: "Please sign up or login", preferredStyle: UIAlertControllerStyle.Alert)
             
             loginAlert.addTextFieldWithConfigurationHandler({
                     textfield in
@@ -72,9 +72,9 @@ class TimelineTableViewController: UITableViewController {
                 PFUser.logInWithUsernameInBackground(usernameTextfield.text, password: passwordTextfield.text){
                     (user:PFUser!, error:NSError!)->Void in
                     if user != nil{
-                        println("Login successful")
+                        print("Login successful")
                     }else{
-                        println("Login failed")
+                        print("Failed")
                     }
                 }
             }))
@@ -84,23 +84,18 @@ class TimelineTableViewController: UITableViewController {
                 let usernameTextfield:UITextField = textFields.objectAtIndex(0) as! UITextField
                 let passwordTextfield:UITextField = textFields.objectAtIndex(1) as! UITextField
                 
-                var sweeter:PFUser = PFUser()
+                let sweeter:PFUser = PFUser()
                 sweeter.username = usernameTextfield.text
                 sweeter.password = passwordTextfield.text
                 
                 sweeter.signUpInBackgroundWithBlock { (success:Bool, error:NSError!) in
                     if error == nil{
-                        println("Sign Up successful")
-                    }else{
-                        let errorString = error.localizedDescription
-                        println(errorString)
+                        print("Sign Up successful")
+                    } else{
+                        _ = error.localizedDescription
                     }
                 }
             }))
-            
-            
-            
-            
             
             self.presentViewController(loginAlert, animated: true, completion: nil)
         }
@@ -144,11 +139,11 @@ class TimelineTableViewController: UITableViewController {
             cell.sweetTextView.text = sweet.objectForKey("content") as! String
             cell.postTypeLabel.text = sweet.objectForKey("PostType") as? String
     
-        var dataFormatter:NSDateFormatter = NSDateFormatter()
+        let dataFormatter:NSDateFormatter = NSDateFormatter()
             dataFormatter.dateFormat = "MM-dd-yyyy"
             cell.timestampLabel.text = dataFormatter.stringFromDate(sweet.createdAt)
         
-        var findSweeter:PFQuery = PFUser.query()
+        let findSweeter:PFQuery = PFUser.query()
             findSweeter.whereKey("objectId", equalTo: sweet.objectForKey("sweeter").objectId)
         
         findSweeter.findObjectsInBackgroundWithBlock{

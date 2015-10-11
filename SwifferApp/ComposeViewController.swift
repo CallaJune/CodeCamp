@@ -24,7 +24,7 @@ class ComposeViewController: UIViewController, UITextViewDelegate,UIPickerViewDa
         // Custom initialization
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     override func viewDidLoad() {
@@ -52,7 +52,7 @@ class ComposeViewController: UIViewController, UITextViewDelegate,UIPickerViewDa
     
     @IBAction func sendSweet(sender: AnyObject) {
         
-        var sweet:PFObject = PFObject(className: "Sweets")
+        let sweet:PFObject = PFObject(className: "Sweets")
         sweet["content"] = sweetTextView.text
         sweet["sweeter"] = PFUser.currentUser()
         sweet["PostType"] = selectedType
@@ -77,8 +77,8 @@ class ComposeViewController: UIViewController, UITextViewDelegate,UIPickerViewDa
             
             
     
-            var newLength:Int = (textView.text as NSString).length + (text as NSString).length - range.length
-            var remainingChar:Int = 500 - newLength
+            let newLength:Int = (textView.text as NSString).length + (text as NSString).length - range.length
+            let remainingChar:Int = 500 - newLength
             
             charRemainingLabel.text = "\(remainingChar)"
             
@@ -94,7 +94,7 @@ class ComposeViewController: UIViewController, UITextViewDelegate,UIPickerViewDa
         return pickerData.count
     }
     //MARK: Delegates
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return pickerData[row]
     }
     
