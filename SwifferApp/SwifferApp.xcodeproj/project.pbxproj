@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		290FAB4C1A68D4C50056A149 /* child-circular-avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 290FAB4B1A68D4C50056A149 /* child-circular-avatar.png */; };
 		294BEF141A5F7D7D0024FB6B /* ChildSheetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294BEF131A5F7D7D0024FB6B /* ChildSheetTableViewController.swift */; };
+		295EC4181BCA23C500E8E490 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 295EC4171BCA23C500E8E490 /* Parse.framework */; };
 		86F71A4B19608640008EE3B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F71A4A19608640008EE3B7 /* AppDelegate.swift */; };
 		86F71A4D19608640008EE3B7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86F71A4C19608640008EE3B7 /* Images.xcassets */; };
-		86F71A5919608640008EE3B7 /* SwifferAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F71A5819608640008EE3B7 /* SwifferAppTests.swift */; };
 		86F71A6319608662008EE3B7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F71A6219608662008EE3B7 /* AudioToolbox.framework */; };
 		86F71A6519608672008EE3B7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F71A6419608672008EE3B7 /* CFNetwork.framework */; };
 		86F71A6719608677008EE3B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F71A6619608677008EE3B7 /* CoreGraphics.framework */; };
@@ -22,7 +22,6 @@
 		86F71A7119608697008EE3B7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F71A7019608697008EE3B7 /* Security.framework */; };
 		86F71A731960869D008EE3B7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F71A721960869D008EE3B7 /* StoreKit.framework */; };
 		86F71A75196086A3008EE3B7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F71A74196086A3008EE3B7 /* SystemConfiguration.framework */; };
-		86F71A77196086C0008EE3B7 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F71A76196086C0008EE3B7 /* Parse.framework */; };
 		86F71A7D1960885E008EE3B7 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86F71A7C1960885E008EE3B7 /* Storyboard.storyboard */; };
 		86F71A7F19608A73008EE3B7 /* TimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F71A7E19608A73008EE3B7 /* TimelineTableViewController.swift */; };
 		86F71A8119608AAE008EE3B7 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F71A8019608AAE008EE3B7 /* ComposeViewController.swift */; };
@@ -39,24 +38,14 @@
 		ACC979B71A60F6CF00F4A424 /* child.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACC979B61A60F6CF00F4A424 /* child.jpg */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		86F71A5319608640008EE3B7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 86F71A3D19608640008EE3B7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 86F71A4419608640008EE3B7;
-			remoteInfo = SwifferApp;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		290FAB4B1A68D4C50056A149 /* child-circular-avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "child-circular-avatar.png"; sourceTree = SOURCE_ROOT; };
 		294BEF131A5F7D7D0024FB6B /* ChildSheetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildSheetTableViewController.swift; sourceTree = "<group>"; };
+		295EC4171BCA23C500E8E490 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = SwifferApp/Parse.framework; sourceTree = "<group>"; };
 		86F71A4519608640008EE3B7 /* SwifferApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwifferApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86F71A4919608640008EE3B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86F71A4A19608640008EE3B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86F71A4C19608640008EE3B7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		86F71A5219608640008EE3B7 /* SwifferAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwifferAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86F71A5719608640008EE3B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86F71A5819608640008EE3B7 /* SwifferAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifferAppTests.swift; sourceTree = "<group>"; };
 		86F71A6219608662008EE3B7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -69,7 +58,6 @@
 		86F71A7019608697008EE3B7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		86F71A721960869D008EE3B7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		86F71A74196086A3008EE3B7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		86F71A76196086C0008EE3B7 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		86F71A7C1960885E008EE3B7 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		86F71A7E19608A73008EE3B7 /* TimelineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewController.swift; sourceTree = "<group>"; };
 		86F71A8019608AAE008EE3B7 /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
@@ -91,24 +79,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				295EC4181BCA23C500E8E490 /* Parse.framework in Frameworks */,
 				86F71A75196086A3008EE3B7 /* SystemConfiguration.framework in Frameworks */,
 				86F71A731960869D008EE3B7 /* StoreKit.framework in Frameworks */,
 				86F71A7119608697008EE3B7 /* Security.framework in Frameworks */,
 				86F71A6F19608691008EE3B7 /* QuartzCore.framework in Frameworks */,
 				86F71A6D1960868A008EE3B7 /* MobileCoreServices.framework in Frameworks */,
 				86F71A6B19608683008EE3B7 /* libz.dylib in Frameworks */,
-				86F71A77196086C0008EE3B7 /* Parse.framework in Frameworks */,
 				86F71A691960867D008EE3B7 /* CoreLocation.framework in Frameworks */,
 				86F71A6719608677008EE3B7 /* CoreGraphics.framework in Frameworks */,
 				86F71A6519608672008EE3B7 /* CFNetwork.framework in Frameworks */,
 				86F71A6319608662008EE3B7 /* AudioToolbox.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		86F71A4F19608640008EE3B7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				86F71A4519608640008EE3B7 /* SwifferApp.app */,
-				86F71A5219608640008EE3B7 /* SwifferAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,7 +176,7 @@
 		86F71A78196086D0008EE3B7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				86F71A76196086C0008EE3B7 /* Parse.framework */,
+				295EC4171BCA23C500E8E490 /* Parse.framework */,
 				86F71A74196086A3008EE3B7 /* SystemConfiguration.framework */,
 				86F71A721960869D008EE3B7 /* StoreKit.framework */,
 				86F71A7019608697008EE3B7 /* Security.framework */,
@@ -231,40 +211,20 @@
 			productReference = 86F71A4519608640008EE3B7 /* SwifferApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		86F71A5119608640008EE3B7 /* SwifferAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 86F71A5F19608640008EE3B7 /* Build configuration list for PBXNativeTarget "SwifferAppTests" */;
-			buildPhases = (
-				86F71A4E19608640008EE3B7 /* Sources */,
-				86F71A4F19608640008EE3B7 /* Frameworks */,
-				86F71A5019608640008EE3B7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				86F71A5419608640008EE3B7 /* PBXTargetDependency */,
-			);
-			name = SwifferAppTests;
-			productName = SwifferAppTests;
-			productReference = 86F71A5219608640008EE3B7 /* SwifferAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		86F71A3D19608640008EE3B7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Training;
 				TargetAttributes = {
 					86F71A4419608640008EE3B7 = {
 						CreatedOnToolsVersion = 6.0;
-						DevelopmentTeam = WM89QG2982;
-					};
-					86F71A5119608640008EE3B7 = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = 86F71A4419608640008EE3B7;
+						DevelopmentTeam = MWRAZYEL66;
 					};
 				};
 			};
@@ -281,7 +241,6 @@
 			projectRoot = "";
 			targets = (
 				86F71A4419608640008EE3B7 /* SwifferApp */,
-				86F71A5119608640008EE3B7 /* SwifferAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -306,13 +265,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		86F71A5019608640008EE3B7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -329,23 +281,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		86F71A4E19608640008EE3B7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				86F71A5919608640008EE3B7 /* SwifferAppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		86F71A5419608640008EE3B7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 86F71A4419608640008EE3B7 /* SwifferApp */;
-			targetProxy = 86F71A5319608640008EE3B7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		86F71A5A19608640008EE3B7 /* Debug */ = {
@@ -368,6 +304,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -433,12 +370,14 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/SwifferApp",
 				);
 				INFOPLIST_FILE = SwifferApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adventpi.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwifferApp/SwifferApp-Bridging-Header.h";
@@ -454,51 +393,17 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/SwifferApp",
 				);
 				INFOPLIST_FILE = SwifferApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adventpi.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwifferApp/SwifferApp-Bridging-Header.h";
-			};
-			name = Release;
-		};
-		86F71A6019608640008EE3B7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwifferApp.app/SwifferApp";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SwifferAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Debug;
-		};
-		86F71A6119608640008EE3B7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwifferApp.app/SwifferApp";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SwifferAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;
 		};
@@ -519,15 +424,6 @@
 			buildConfigurations = (
 				86F71A5D19608640008EE3B7 /* Debug */,
 				86F71A5E19608640008EE3B7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		86F71A5F19608640008EE3B7 /* Build configuration list for PBXNativeTarget "SwifferAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				86F71A6019608640008EE3B7 /* Debug */,
-				86F71A6119608640008EE3B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
