@@ -10,8 +10,6 @@ import UIKit
 
 class SweetTableViewCell: UITableViewCell {
 
-
-
     @IBOutlet var postTypeLabel: UILabel! = UILabel()
     @IBOutlet var usernameLabel: UILabel! = UILabel()
     @IBOutlet var timestampLabel: UILabel! = UILabel()
@@ -33,5 +31,4 @@ class SweetTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state
     }
-
 }
